@@ -1,4 +1,3 @@
-#FROM marriott-test/rhel-base-container:latest
 FROM rhel-base-container:latest
 
 USER root
@@ -8,7 +7,7 @@ RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - \
     && yum clean all \
     && rm -rf /var/cache/yum  
 
-USER 1001
+USER ${USER_NAME}
 
 COPY hello.js ${APP_ROOT}/
 
