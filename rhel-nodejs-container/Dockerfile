@@ -1,4 +1,5 @@
-FROM marriott-test/rhel-base-container:latest
+#FROM marriott-test/rhel-base-container:latest
+FROM rhel-base-container:latest
 
 USER root
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash - \
