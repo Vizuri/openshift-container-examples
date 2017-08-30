@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 #if ! whoami &> /dev/null; then
 #  if [ -w /etc/passwd ]; then
 #    cp /etc/passwd.orig /etc/passwd
